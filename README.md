@@ -8,11 +8,22 @@ Update SSL Certificates of Google App Engine (GAE) in just 1 command.
 - Install the Let's Encrypt client dehydrated https://github.com/lukas2511/dehydrated
 - Install and init Google Cloud SDK
 
-More ditails in
+More details in
 http://uyamazak.hatenablog.com/entry/2017/07/03/194950
 
 ## Install
-Edit variables in head of gae_hook.sh and copy gae_hook.sh to your dehydrated directory.
+
+```
+git clone https://github.com/uyamazak/gae_ssl_autoupdater.git
+cd gae_ssl_autoupdater
+
+# Edit variables written at the top of gae_hook.sh
+vim gae_hook.sh
+
+# copy files to dehydrated's install dir
+cp gae_hook.sh /path/to/dehydrated
+cp config /path/to/dehydrated
+```
 
 ## Usage
 
