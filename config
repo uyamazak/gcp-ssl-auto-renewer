@@ -1,0 +1,4 @@
+# config for dehydrated
+# needs for app engine "Maximum allowed key modulus: 2048 bits"
+# https://cloud.google.com/appengine/docs/flexible/python/using-custom-domains-and-ssl
+KEYSIZE="2048"
