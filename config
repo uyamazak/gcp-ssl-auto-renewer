@@ -2,3 +2,7 @@
 # needs for app engine "Maximum allowed key modulus: 2048 bits"
 # https://cloud.google.com/appengine/docs/flexible/python/using-custom-domains-and-ssl
 KEYSIZE="2048"
+
+# IF you are in test phase uncomment belows
+#CA="https://acme-staging.api.letsencrypt.org/directory"
+#CA_TERMS="https://acme-staging.api.letsencrypt.org/terms"
