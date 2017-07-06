@@ -1,0 +1,7 @@
+echo "GCP-SSL-AutoUpdater daily.sh start at `date "+%Y-%m-%d %H:%M:%S"`"
+
+cd `dirname $0`
+./example.com.sh
+
+echo "end at `date "+%Y-%m-%d %H:%M:%S"`"
+echo "----------------------------------"
