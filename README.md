@@ -8,8 +8,18 @@ Update SSL Certificates of Google App Engine (GAE) and Google Cloud Load Balanci
 - Install the Let's Encrypt client dehydrated https://github.com/lukas2511/dehydrated
 - Install Google Cloud SDK and init
 
+Zone names of Cloud DNS needs to be a domain dots converted to a hyphen.
+
+domain: www.example.com
+
+zone name: www-example-com
+
+
 More details in
 http://uyamazak.hatenablog.com/entry/2017/07/03/194950
+
+
+
 
 ## Install
 
