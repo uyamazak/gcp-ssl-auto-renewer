@@ -6,7 +6,7 @@ Update SSL Certificates of Google App Engine (GAE) and Google Cloud Load Balanci
 - A Domain be managed in Google Cloud DNS.
 - Project with GAE or Cloud LB enabled
 - Install the Let's Encrypt client dehydrated https://github.com/lukas2511/dehydrated
-- Install and init Google Cloud SDK
+- Install Google Cloud SDK and init
 
 More details in
 http://uyamazak.hatenablog.com/entry/2017/07/03/194950
@@ -21,12 +21,12 @@ http://uyamazak.hatenablog.com/entry/2017/07/03/194950
 # install dehydrated
 % git clone https://github.com/lukas2511/dehydrated.git
 
-% ls                                                                          
+% ls
 LICENSE  README.md  config  daily.sh  dehydrated/  example.com.sh  hooks/
 
 
 # Make your hook file
-% cd GCP-SSL-AutoUpdater/hooks
+% cd ./hooks
 
 ## if GAE
 % cp gae_hook.sh.sample my_gae_hook.sh
@@ -39,6 +39,8 @@ LICENSE  README.md  config  daily.sh  dehydrated/  example.com.sh  hooks/
 
 # Make command file
 # Edit domain and hook.sh 
+% cd /path/to/GCP-SSL-AutoUpdater
+
 % cp example.com.sh your.example.com.sh
 % vim your.example.com.sh
 % chmod 700 your.example.com.sh
