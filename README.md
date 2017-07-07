@@ -1,5 +1,5 @@
 # GCP-SSL-AutoUpdater
-Update SSL Certificates of Google App Engine (GAE) and Google Cloud Load Balancing with SSL proxy (Cloud LB) in just 1 command.
+Auto renew SSL Certificates of Google App Engine (GAE) and Google Cloud Load Balancing with SSL proxy (Cloud LB) in just 1 command.
 
 ## Prerequisites
 
@@ -10,10 +10,15 @@ Update SSL Certificates of Google App Engine (GAE) and Google Cloud Load Balanci
 
 Zone names of Cloud DNS needs to be a domain dots converted to a hyphen.
 
-domain: www.example.com
+if domain is: www.example.com
 
-zone name: www-example-com
+when zone name must be: www-example-com
 
+You can change converting rule in httpslb.base.
+Edit line below 
+```
+ZONE_NAME=${i//./-}
+```
 
 More details in
 http://uyamazak.hatenablog.com/entry/2017/07/03/194950
