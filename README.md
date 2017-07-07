@@ -73,11 +73,10 @@ Run command manually
 ```
 Check run messages and ssl certificates from web browser.
 
-if you want to use crontab. Use daily.sh template.
-
+if you want to use crontab. Use daily.sh.sample
 ```
+% cp daily.sh.sample daily.sh 
 % vim daily.sh 
-
 ```
 
 ```
