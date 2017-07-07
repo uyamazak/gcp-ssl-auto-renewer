@@ -67,10 +67,24 @@ $ pwd
 
 ## Usage
 
-run command manually and set for your crontab if success
+Run command manually
 ```
 % ./your.example.com.sh
 ```
+Check run messages and ssl certificates from web browser.
+
+if you want to use crontab. Use daily.sh template.
+
+```
+% vim daily.sh 
+
+```
+
+```
+% crontab -e
+0 0 * * * /path/to/install_dir/daily.sh >> /path/to/install_dir/auto.log
+```
+
 
 ## Author
 uyamazak at bizocean
