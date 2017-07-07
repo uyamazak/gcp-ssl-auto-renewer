@@ -8,22 +8,8 @@ Auto renew SSL Certificates of Google App Engine (GAE) and Google Cloud Load Bal
 - Install the Let's Encrypt client dehydrated https://github.com/lukas2511/dehydrated
 - Install Google Cloud SDK and init
 
-Zone names of Cloud DNS needs to be a domain dots converted to a hyphen.
-
-if domain is: www.example.com
-
-when zone name must be: www-example-com
-
-You can change converting rule in httpslb.base.
-Edit line below 
-```
-ZONE_NAME=${i//./-}
-```
-
 More details in
 http://uyamazak.hatenablog.com/entry/2017/07/03/194950
-
-
 
 
 ## Install
@@ -89,6 +75,18 @@ if you want to use crontab. Use daily.sh.sample
 0 0 * * * /path/to/install_dir/daily.sh >> /path/to/install_dir/auto.log
 ```
 
+## About zone name rule
+Zone names of Cloud DNS needs to be a domain dots converted to a hyphen.
+
+if domain is: www.example.com
+
+when zone name must be: www-example-com
+
+You can change converting rule in httpslb.base.
+Edit line below 
+```
+ZONE_NAME=${domain//./-}
+```
 
 ## Author
 uyamazak at bizocean
