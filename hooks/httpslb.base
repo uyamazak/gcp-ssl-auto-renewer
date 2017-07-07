@@ -3,9 +3,9 @@
 function deploy_challenge {
     local DOMAIN="${1}" TOKEN_FILENAME="${2}" TOKEN_VALUE="${3}"
     local ZONE_NAME ACME_TTL OLD_TADA
-    for i in ${TARGET_DOMAINS[@]}; do
-        TARGET_DOMAIN=${i}
-        ZONE_NAME=${i//./-}
+    for domain in ${TARGET_DOMAINS[@]}; do
+        TARGET_DOMAIN=${domain}
+        ZONE_NAME=${domain//./-}
         echo "TARGET_DOMAIN:${TARGET_DOMAIN}"
         echo "ZONE_NAME:${ZONE_NAME}"
       if [ $DOMAIN = $TARGET_DOMAIN ];then
