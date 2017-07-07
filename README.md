@@ -24,6 +24,8 @@ http://uyamazak.hatenablog.com/entry/2017/07/03/194950
 ## Install
 
 ```
+% cd /path/to/install_dir
+
 % git clone https://github.com/uyamazak/GCP-SSL-AutoUpdater.git
 
 % cd GCP-SSL-AutoUpdater
@@ -47,22 +49,25 @@ LICENSE  README.md  config  daily.sh  dehydrated/  example.com.sh  hooks/
 # Edit variables
 % vim my_gae_hook.sh
 
-# Make command file
-# Edit domain and hook.sh 
-% cd /path/to/GCP-SSL-AutoUpdater
+# Make your command file
+% cd ../
+$ pwd
+/path/to/GCP-SSL-AutoUpdater
 
 % cp example.com.sh your.example.com.sh
+# Edit domain and hook.sh 
 % vim your.example.com.sh
 % chmod 700 your.example.com.sh
 
 # Copy config file to dehydrated's install dir
-% cd GCP-SSL-AutoUpdater
+$ pwd
+/path/to/GCP-SSL-AutoUpdater
 % cp config ./dehydrated
 ```
 
 ## Usage
 
-run command and set for your crontab
+run command manually and set for your crontab if success
 ```
 % ./your.example.com.sh
 ```
