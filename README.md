@@ -1,4 +1,4 @@
-# GCP-SSL-AutoUpdater
+# gcp-ssl-auto-renewer
 Auto renew SSL Certificates of Google App Engine (GAE) and Google Cloud Load Balancing with SSL proxy (Cloud LB) in just 1 command.
 
 ## Prerequisites
