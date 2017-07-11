@@ -72,7 +72,7 @@ if you want to use crontab. Use daily.sh.sample
 
 ```
 % crontab -e
-0 0 * * * /path/to/install_dir/daily.sh >> /path/to/install_dir/auto.log
+0 0 * * * /path/to/install_dir/daily.sh 1>>/path/to/log_dir/auto.log 2>>/path/to/log_dir/auto-error.log
 ```
 
 ## About zone name rule
