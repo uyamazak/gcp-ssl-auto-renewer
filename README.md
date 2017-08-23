@@ -19,7 +19,7 @@ http://uyamazak.hatenablog.com/entry/2017/07/03/194950
 
 % git clone https://github.com/uyamazak/gcp-ssl-auto-renewer.git
 
-% cd GCP-SSL-AutoUpdater
+% cd gcp-ssl-auto-renewer
 
 # install dehydrated
 % git clone https://github.com/lukas2511/dehydrated.git
