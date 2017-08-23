@@ -43,7 +43,7 @@ LICENSE  README.md  config  daily.sh  dehydrated/  example.com.sh  hooks/
 # Make your command file
 % cd ../
 $ pwd
-/path/to/GCP-SSL-AutoUpdater
+/path/to/gcp-ssl-auto-renewer
 
 % cp example.com.sh your.example.com.sh
 # Edit domain and hook.sh 
