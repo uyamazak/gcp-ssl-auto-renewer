@@ -17,7 +17,7 @@ http://uyamazak.hatenablog.com/entry/2017/07/03/194950
 ```
 % cd /path/to/install_dir
 
-% git clone https://github.com/uyamazak/GCP-SSL-AutoUpdater.git
+% git clone https://github.com/uyamazak/gcp-ssl-auto-renewer.git
 
 % cd GCP-SSL-AutoUpdater
 
