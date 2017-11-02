@@ -1,10 +1,10 @@
 # GCP-SSL-AutoUpdater
-Update SSL Certificates of Google App Engine (GAE) and Google Cloud Load Balancing with SSL proxy (Cloud LB) in just 1 command.
+Update SSL Certificates Google Cloud Load Balancing with SSL proxy (Cloud LB) in just 1 command.
 
 ## Prerequisites
 
 - A Domain be managed in Google Cloud DNS.
-- Project with GAE or Cloud LB enabled
+- GCP Project with Cloud LB enabled
 - Install the Let's Encrypt client dehydrated https://github.com/lukas2511/dehydrated
 - Install and init Google Cloud SDK
 
@@ -25,17 +25,14 @@ git clone https://github.com/lukas2511/dehydrated.git
 # Make your hook file
 cd GCP-SSL-AutoUpdater/hooks
 
-## if GAE
-cp gae_hook.sh.sample my_gae_hook.sh
-
-## if Cloud LB
+## Cloud LB
 cp httpslb_hook.sh.sample my_httpslb_hook.sh
 
 # Edit variables
 vim my_gae_hook.sh
 
 # Make command file
-# Edit domain and hook.sh 
+# Edit domain and hook.sh
 cp example.com.sh your.example.com.sh
 vim your.example.com.sh
 chmod 700 your.example.com.sh
