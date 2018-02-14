@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 =======
 # gcp-ssl-auto-renewer
 Auto renew SSL Certificates of Google Cloud Load Balancing with SSL proxy (Cloud LB) in just 1 command.
