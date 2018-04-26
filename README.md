@@ -1,13 +1,12 @@
-=======
 # gcp-ssl-auto-renewer
 Auto renew SSL Certificates of Google Cloud Load Balancing with SSL proxy (Cloud LB) in just 1 command.
 
 ## Prerequisites
 
-- A Domain be managed in Google Cloud DNS.
+- The domain is managed in Google Cloud DNS.
 - GCP Project with Cloud LB enabled
 - Install the Let's Encrypt client dehydrated https://github.com/lukas2511/dehydrated
-- Install Google Cloud SDK and init
+- Install Google Cloud SDK and init in your server
 
 More details in
 http://uyamazak.hatenablog.com/entry/2017/07/03/194950
@@ -36,7 +35,7 @@ LICENSE  README.md  config  daily.sh  dehydrated/  example.com.sh  hooks/
 cp httpslb_hook.sh.sample my_httpslb_hook.sh
 
 # Edit variables
-% vim my_gae_hook.sh
+% vim my_httpslb_hook.sh
 
 # Make your command file
 % cd ../
@@ -78,7 +77,7 @@ Zone names of Cloud DNS needs to be a domain dots converted to a hyphen.
 
 if domain is: www.example.com
 
-when zone name must be: www-example-com
+then zone name in Cloud DNS must be: www-example-com
 
 You can change converting rule in httpslb.base.
 Edit line below
