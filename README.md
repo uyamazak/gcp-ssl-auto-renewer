@@ -49,7 +49,7 @@ $ pwd
 
 # Copy config file to dehydrated's install dir
 $ pwd
-/path/to/GCP-SSL-AutoUpdater
+/path/to/gcp-ssl-auto-renewer
 % cp config ./dehydrated
 ```
 
