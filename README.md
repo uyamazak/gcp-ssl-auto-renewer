@@ -27,7 +27,6 @@ http://uyamazak.hatenablog.com/entry/2017/07/03/194950
 % ls
 LICENSE  README.md  config  daily.sh  dehydrated/  example.com.sh  hooks/
 
-
 # Make your hook file
 % cd ./hooks
 
@@ -51,6 +50,23 @@ $ pwd
 $ pwd
 /path/to/gcp-ssl-auto-renewer
 % cp config ./dehydrated
+
+# Check gcloud versions
+% gcloud --version
+Google Cloud SDK 207.0.0
+alpha 2018.06.22
+app-engine-python 1.9.71
+beta 2018.06.22
+bq 2.0.34
+core 2018.06.22
+datalab 20180503
+gcloud
+gsutil 4.32
+kubectl
+
+# To use dehydrated with this certificate authority you have to agree to their terms of service which you can find here: https://letsencrypt.org/documents/LE-SA-v1.2-November-15-2017.pdf
+# To accept these terms of service run
+% ./dehydrated/dehydrated --register --accept-terms
 ```
 
 ## Usage
