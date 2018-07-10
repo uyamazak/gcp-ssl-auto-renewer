@@ -42,7 +42,7 @@ function deploy_cert {
       --private-key=$KEYFILE
 
     echo "update HTTPS_PROXY:${HTTPS_PROXY}"
-    gcloud beta compute --project ${LB_PROJECT} target-https-proxies update ${HTTPS_PROXY} --ssl-certificate ${CERT_NAME}
+    gcloud beta compute --project ${LB_PROJECT} target-https-proxies update ${HTTPS_PROXY} --ssl-certificates ${CERT_NAME}
 }
 
 function unchanged_cert {
