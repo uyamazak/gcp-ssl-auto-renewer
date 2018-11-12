@@ -1,6 +1,11 @@
 # gcp-ssl-auto-renewer
 Auto renew SSL Certificates of Google Cloud Load Balancing with SSL proxy (Cloud LB) in just 1 command.
 
+## 2018/10 Google-managed SSL certificates beta for HTTPS load balancing was released. 
+You can also use this.
+More detail:
+https://cloud.google.com/load-balancing/docs/ssl-certificates#managed-certs
+
 ## Prerequisites
 
 - The domain is managed in Google Cloud DNS.
